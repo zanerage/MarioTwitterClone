@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mario-TwitterClone</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">fKr9mlsypsyacFfN4VaAOEqSJ7SHaYx7jFCPiyZi</string>
+    <string name="back4app_client_key">u3k6L1F7agbf6KVuvE5e8L1xEd61QkGHuZRCJNpT</string>
+
 </resources>
