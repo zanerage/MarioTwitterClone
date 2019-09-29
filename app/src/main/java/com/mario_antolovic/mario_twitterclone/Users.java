@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.LogOutCallback;
@@ -34,6 +35,8 @@ public class Users extends AppCompatActivity implements AdapterView.OnItemClickL
         listView = findViewById(R.id.listView);
         arrayList = new ArrayList();
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+        final TextView txtLoading = findViewById(R.id.txt_loading);
+
         try {
             ParseQuery<ParseUser> parseQuery = ParseUser.getQuery();
 
@@ -48,6 +51,8 @@ public class Users extends AppCompatActivity implements AdapterView.OnItemClickL
                                 arrayList.add(user.getUsername());
                             }
                             listView.setAdapter(arrayAdapter);
+                            txtLoading.animate().alpha(0).setDuration(2000);
+                            listView.setVisibility(View.VISIBLE);
                           //  txtLoading.animate().alpha(0).setDuration(2000);
                          //   listView.setVisibility(View.VISIBLE);
 

@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             public void done(ParseUser user, ParseException e) {
                                 if (user !=null && e ==null) {
                                     FancyToast.makeText(LoginActivity.this,"You've successful logged " + user.get("username") , FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true).show();
-                                    Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this,Users.class);
                                     startActivity(intent);
                                     finish();
                                 } else {
