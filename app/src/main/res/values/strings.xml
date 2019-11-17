@@ -5,5 +5,10 @@
     <!-- Change the following strings as required -->
     <string name="back4app_app_id">fKr9mlsypsyacFfN4VaAOEqSJ7SHaYx7jFCPiyZi</string>
     <string name="back4app_client_key">u3k6L1F7agbf6KVuvE5e8L1xEd61QkGHuZRCJNpT</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
 
 </resources>
